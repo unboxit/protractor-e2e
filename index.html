@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Protractor E2E</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+  </head>
+
+  <body ng-app="app">
+
+    <div id="container" class="container">
+      <div ui-view></div>
+    </div>
+
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="./app/app.js"></script>
+    <script src="./app/modules/one/one.controller.js"></script>
+    <script src="./app/modules/two/two.controller.js"></script>
+  </body>
+</html>
