@@ -3,12 +3,11 @@
 
 describe('Protractor E2E', function () {
 
-  var page;
+  var page = require('./index.page');
 
   beforeEach(function () {
-    page = require('./index.page');
     page.get('#/one');
-    page.waitForAngular();
+    page.ignoreSynchronization = true;
   });
 
   describe('#index', function () {

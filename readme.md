@@ -3,7 +3,7 @@
 __Installation__
 
 
-`$ npm install -g protractor`
+`$ npm install -g protractor cucumber`
 
 `$ webdriver-manager update`
 
