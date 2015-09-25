@@ -1,5 +1,4 @@
-## Protractor E2E
-
+## Protractor E2E [![Build Status](https://travis-ci.org/unboxit/protractor-e2e.svg?branch=master)](https://travis-ci.org/unboxit/protractor-e2e)
 __Setup__
 
 
@@ -15,8 +14,6 @@ __Setup__
 __Usage__
 
 `$ npm run server`
-
-`$ webdriver-manager start`
 
 `$ npm test` - for jasmine2
 

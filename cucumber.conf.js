@@ -10,7 +10,7 @@ exports.config = {
 
   baseUrl: 'http://localhost:8080',
 
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  seleniumServerJar: './node_modules/selenium-standalone/.selenium/selenium-server/2.46.0-server.jar',
 
   specs: [
     './specs/features/*.feature'
