@@ -1,9 +1,9 @@
 ## Protractor E2E
 
-__Installation__
+__Setup__
 
 
-`$ npm install -g protractor cucumber`
+`$ npm install -g protractor cucumber lr-http-server`
 
 `$ webdriver-manager update`
 
@@ -18,4 +18,6 @@ __Usage__
 
 `$ webdriver-manager start`
 
-`$ npm test`
+`$ npm test` - for jasmine2
+
+`$ npm run cucumber` - for cucumber

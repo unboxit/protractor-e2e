@@ -16,6 +16,10 @@ var IndexPage = function () {
     browser.waitForAngular();
   };
 
+  this.getTitle = function () {
+    browser.getTitle();
+  };
+
   // container
   this.container = element(by.css('.container'));
 

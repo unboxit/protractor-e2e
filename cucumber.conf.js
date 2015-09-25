@@ -4,7 +4,7 @@
 
 exports.config = {
 
-  // rootElement: 'body',
+  rootElement: 'body',
 
   framework: 'cucumber',
 
@@ -13,21 +13,17 @@ exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
 
   specs: [
-    './specs/features/*.features'
+    './specs/features/*.feature'
   ],
 
-  chromeOnly: true,
-
   capabilities: {
-    'browserName': 'chrome',
-    'chromeOptions': {
-      'args': ['--disable-extensions']
-    }
+    'browserName': 'phantomjs'
   },
+
   // Options to be passed to Cucumber.
   cucumberOpts: {
     // Require files before executing the features.
-    require: './specs/features/step_definitions/index.js',
+    require: './specs/features/step_definitions/*.js',
     // Only execute the features or scenarios with tags matching @dev.
     // This may be an array of strings to specify multiple tags to include.
     tags: '@dev',

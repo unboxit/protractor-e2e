@@ -16,20 +16,15 @@ exports.config = {
     'specs/e2e/index.spec.js'
   ],
 
-  // suites: {
-  //   smoke: 'specs/smoke/*.js',
-  //   full: 'specs/e2e/**/*.spec.js'
-  // },
-
-  // If chromeOnly is true, we dont need to stand the selenium server.
-  // If you want to test with firefox, then set this to false and change the browserName
-  chromeOnly: true,
-
   capabilities: {
-    'browserName': 'chrome',
-    'chromeOptions': {
-      'args': ['--disable-extensions']
-    }
+    'browserName': 'phantomjs',
+    //Can be used to specify the phantomjs binary path.
+    //This can generally be ommitted if you installed phantomjs globally.
+    'phantomjs.binary.path': require('phantomjs').path,
+    'phantomjs.cli.args': [
+      '--ignore-ssl-errors=true',
+      '--web-security=false'
+      ]
   },
 
   // Options to be passed to minijasminenode.
