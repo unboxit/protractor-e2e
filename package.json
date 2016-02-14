@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "cucumber": "protractor cucumber.conf.js",
-    "server": "lr-http-server",
+    "start": "lr-http-server",
     "test": "protractor protractor.conf.js"
   },
   "keywords": [],
@@ -12,16 +12,16 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "cucumber": "0.5.3",
-    "jasmine-reporters": "2.0.7",
-    "protractor": "2.2.0",
-    "selenium-standalone": "4.6.0"
+    "cucumber": "0.9.4",
+    "jasmine-reporters": "2.1.1",
+    "protractor": "3.1.1",
+    "selenium-standalone": "4.9.0"
   },
   "dependencies": {
-    "angular": "1.4.5",
-    "angular-ui-router": "0.2.15",
-    "chai": "3.3.0",
-    "chai-as-promised": "5.1.0",
-    "mocha": "2.3.3"
+    "angular": "1.5.0",
+    "angular-ui-router": "0.2.18",
+    "chai": "3.5.0",
+    "chai-as-promised": "5.2.0",
+    "mocha": "2.4.5"
   }
 }
