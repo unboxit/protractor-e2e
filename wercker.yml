@@ -2,11 +2,15 @@ box: nodesource/trusty
 build:
   steps:
     - script:
-        name: dependencies
-        code: sudo npm install -g protractor@3.1.1 phantomjs
-    - npm-install
+        name: setup
+        code: sudo npm install -g protractor@3.1.1 phantomjs-prebuilt
+    - script:
+        name: install
+        code: npm install
     - script:
         name: postinstall
         code: npm run postinstall
-    - npm-test
+    - script:
+        name: test
+        code: npm test
 
