@@ -1,3 +1,5 @@
+/* global angular */
+/* global angular */
 'use strict';
 
 angular.module('app')

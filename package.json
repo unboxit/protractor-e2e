@@ -5,7 +5,7 @@
   "scripts": {
     "cucumber": "protractor cucumber.conf.js",
     "postinstall": "npm run webdriver && npm run selenium",
-    "selenium": "./node_modules/selenium-standalone/bin/selenium-standalone install",
+    "selenium": "selenium-standalone install",
     "start": "lr-http-server",
     "test": "protractor protractor.conf.js",
     "webdriver": "webdriver-manager update"

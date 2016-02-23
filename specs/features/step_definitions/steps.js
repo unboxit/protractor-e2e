@@ -1,3 +1,4 @@
+/* global browser */
 'use strict';
 
 //https://github.com/domenic/chai-as-promised/
@@ -21,9 +22,9 @@ module.exports = function () {
 		next();
 	});
 
-	this.Then(/^page should have a "([^"]*)" element$/, function (element, next) {
-		expect(page.container).to.be.truthy;
-	  next();
-	});
+	//this.Then(/^page should have a "([^"]*)" element$/, function (element, next) {
+	//	expect(page.container).to.be.truthy;
+	//  next();
+	//});
 
 };
