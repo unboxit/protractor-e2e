@@ -1,4 +1,4 @@
-/* global browser */
+/* global browser, element, by */
 
 'use strict';
 
@@ -27,6 +27,6 @@ var IndexPage = function () {
   this.selectElements = element.all(by.tagName('select'));
   this.selectFirstElement = this.selectElements.get(0);
 
-}
+};
 
 module.exports = new IndexPage();

@@ -1,4 +1,4 @@
-/* global describe, require, browser */
+/* global describe, beforeEach, it, expect, require, browser */
 'use strict';
 
 describe('Protractor E2E', function () {
