@@ -8,7 +8,9 @@
     "selenium": "selenium-standalone install",
     "start": "lr-http-server",
     "test": "protractor protractor.conf.js",
-    "webdriver": "webdriver-manager update"
+    "webdriver": "webdriver-manager update",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +27,8 @@
     "angular-ui-router": "^0.2.15",
     "chai": "^3.3.0",
     "chai-as-promised": "^5.1.0",
-    "mocha": "^2.3.3"
-  }
+    "mocha": "^2.3.3",
+    "snyk": "^1.17.0"
+  },
+  "snyk": true
 }
