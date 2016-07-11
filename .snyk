@@ -1,0 +1,6 @@
+version: v1.5.0
+ignore: {}
+patch:
+  'npm:minimatch:20160620':
+    - mocha > glob > minimatch:
+        patched: '2016-07-11T03:13:31.764Z'
